@@ -6,7 +6,7 @@ let result = document.querySelector('[data-result]')
 function minutesToSeconds(){
     let minutes = document.querySelector('[data-input]').value
     let seconds = minutes * 60
-    result.textContent = seconds.toFixed(2)
+    result.textContent = `${seconds.toFixed(2)} seconds`
 }
 
 //Final step is to add an eventlistener to our button with the callback function
